@@ -96,7 +96,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .client_section .client_container {
     width: 100%;
   }
@@ -121,6 +121,7 @@
   .contact_section .contact_form-container input {
     width: 100%;
   }
+  
 }
 
 @media (max-width: 576px) {

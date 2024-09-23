@@ -30,3 +30,67 @@ strong{
     font-weight: normal;
 }
 
+@media (max-width: 769px) {
+    .client_section .client_container {
+      width: 100%;
+    }
+  
+    .client_section .client_container .box {
+      margin: 20px 15px;
+    }
+  
+    .client_section .carousel-control-prev,
+    .client_section .carousel-control-next {
+      display: none;
+    }
+  
+    .subscribe_section form {
+      margin-top: 25px;
+    }
+  
+    .contact_section .contact_form-container button {
+      margin-bottom: 45px;
+    }
+  
+    .contact_section .contact_form-container input {
+      width: 100%;
+    }
+    
+    .blog-section{
+        width: 90%;
+    }
+
+  }
+
+  
+@media (max-width: 576px) {
+
+    .slider_section .carousel-control-prev,
+    .slider_section .carousel-control-next {
+  
+      left: 41.6%;
+    }
+  
+    .custom_heading-container hr {
+      display: none;
+    }
+  
+    .info_social{
+      gap: 15px;
+    }
+  
+    .service-card{
+      flex-direction: column;
+    }
+    .service-card-flip{
+      flex-direction: column-reverse;
+    }
+    .navbar-brand strong{
+      font-size: 1rem;
+    }
+    .blog-section{
+      width: 100%;
+      margin: 25px auto;
+    }
+  
+  }
