@@ -112,7 +112,7 @@
 
       <div class="service_container2 layout_padding2">
   
-        <a href="" class="d-flex align-items-center justify-content-start">
+        <div class="d-flex align-items-center justify-content-start service-card fade-in fade-in-left">
           <div class="box">
             <div class="img-box">
               <img src="images/s-1.png" alt="" class="img-1">
@@ -123,9 +123,9 @@
             </div>
           </div>
           <p class="ml-3">Creamos soluciones personalizadas que se adaptan a tus objetivos específicos. Nuestro equipo trabaja de la mano contigo para entender tus requerimientos y traducirlos en aplicaciones que no solo cumplan, sino que superen tus expectativas. Desde el diseño hasta la implementación, garantizamos un proceso ágil y transparente.</p>
-        </a>
+        </div>
   
-        <a href="" class="d-flex align-items-center justify-content-start">
+        <div class="d-flex align-items-center justify-content-start service-card fade-in fade-in-right">
           <p class="mr-3">Desarrollamos aplicaciones web que mejoran la experiencia del usuario y optimizan procesos. Nuestras soluciones son escalables y están diseñadas para integrarse fácilmente con otras plataformas, lo que te permite adaptarte rápidamente a las necesidades del mercado y de tus clientes.</p>
           <div class="box">
             <div class="img-box">
@@ -136,9 +136,9 @@
               <h6>Aplicaciones web</h6>
             </div>
           </div>
-        </a>
+        </div>
   
-        <a href="" class="d-flex align-items-center justify-content-start">
+        <div class="d-flex align-items-center justify-content-start service-card fade-in fade-in-left">
           <div class="box">
             <div class="img-box">
               <img src="images/s-3.png" alt="" class="img-1">
@@ -149,9 +149,9 @@
             </div>
           </div>
           <p class="ml-3">Mejoramos tu visibilidad en línea para atraer más tráfico a tu sitio web. Implementamos estrategias efectivas de SEO, desde la investigación de palabras clave hasta la optimización técnica, para asegurarnos de que tu contenido alcance a tu audiencia objetivo y se mantenga en las primeras posiciones de los resultados de búsqueda.</p>
-        </a>
+        </div>
   
-        <a href="" class="d-flex align-items-center justify-content-start">
+        <div class="d-flex align-items-center justify-content-start service-card fade-in fade-in-right">
           <p class="mr-3">Creamos diseños que se adaptan a cualquier dispositivo, garantizando una experiencia óptima. Nuestros diseños responsivos no solo mejoran la estética, sino que también aseguran que los usuarios puedan interactuar con tu sitio de manera efectiva, sin importar el tamaño de su pantalla.</p>
           <div class="box">
             <div class="img-box">
@@ -162,9 +162,9 @@
               <h6>Diseño Responsivo y Adaptación Móvil</h6>
             </div>
           </div>
-        </a>
+        </div>
   
-        <a href="" class="d-flex align-items-center justify-content-start">
+        <div class="d-flex align-items-center justify-content-start service-card fade-in fade-in-left">
           <div class="box">
             <div class="img-box">
               <img src="images/s-5.png" alt="" class="img-1">
@@ -175,7 +175,7 @@
             </div>
           </div>
           <p class="ml-3">Ofrecemos servicios de mantenimiento para que tu sitio siempre esté actualizado y funcional. Esto incluye la implementación de actualizaciones de seguridad, la corrección de errores y la mejora continua de tus funcionalidades para asegurarnos de que tu plataforma siga siendo relevante y eficaz en un entorno digital en constante cambio.</p>
-        </a>
+        </div>
   
       </div>
     </div>
@@ -233,6 +233,35 @@
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // Selecciona los elementos a observar
+    const targets = document.querySelectorAll(".service-card.fade-in");
+  
+    // Define la función que será llamada cuando el elemento entre o salga del viewport
+    const observerCallback = (entries, observer) => {
+       entries.forEach(entry => {
+          if (entry.isIntersecting) {
+          // Añade la clase 'visible' cuando el elemento esté en el viewport
+          entry.target.classList.add("visible");
+          // Deja de observar el elemento si ya se ha visto
+          observer.unobserve(entry.target);
+          }
+       });
+    };
+  
+    // Crea un Intersection Observer
+    const observer = new IntersectionObserver(observerCallback, {
+       root: null, // Usa el viewport del navegador
+       rootMargin: '0px',
+       threshold: 0.5 // Cuánto del elemento debe estar visible para activar la función
+    });
+  
+    // Comienza a observar los elementos
+    targets.forEach(target => observer.observe(target));
+    });
+  </script>
 
 </body>
 </body>
