@@ -487,7 +487,7 @@ a:focus {
 }
 
 .portfolio_section .img-box {
-  width: 360px;
+  width: 90%;
   height: 225px;
   position: relative;
   margin: 10px;
@@ -556,6 +556,10 @@ a:focus {
 
 .portfolio_section .img-box:hover a img {
   opacity: 1;
+}
+
+.news_section{
+  overflow: hidden;
 }
 
 .news_section h2,
@@ -953,6 +957,7 @@ a:focus {
 .fade-in {
   opacity: 0;
   transition: opacity 1s ease-out, transform 1s ease-out;
+  overflow: hidden;
 }
 
 /* Efecto de entrada para #about desde la izquierda */

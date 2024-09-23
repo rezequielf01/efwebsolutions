@@ -3,6 +3,12 @@
   .quote_btn-container a {
     display: none;
   }
+  .portfolio_section .img-box {
+    width: 90%;
+    height: 150px;
+    position: relative;
+    margin: 10px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -15,15 +21,21 @@
 
   .slider_section .detail-box {
     width: 100%;
+    height: 100%;
     text-align: center;
     padding: 75px 15px;
     background: linear-gradient(135deg, #a454fd, #2b05df);
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .slider_section .img-box {
     width: 100%;
     margin: 0;
+    display: none;
   }
 
   .slider_section .slider_bg-container {
@@ -45,10 +57,12 @@
 
   .slider_section .carousel-control-prev {
     transform: translate(0, 50%);
+    display: none;
   }
 
   .slider_section .carousel-control-next {
     transform: translate(115%, 50%);
+    display: none;
   }
 
   .service_section .service_container {
@@ -162,3 +176,5 @@
   .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
     padding: 10px 30px;
   }
+
+}

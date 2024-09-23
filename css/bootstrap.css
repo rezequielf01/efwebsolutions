@@ -3115,6 +3115,7 @@ input[type="button"].btn-block {
     right: 0;
     left: auto;
   }
+  
 }
 
 @media (min-width: 1200px) {
@@ -4334,7 +4335,7 @@ input[type="button"].btn-block {
 }
 
 @media (min-width: 992px) {
-  .navbar-expand-lg {
+  .navbar-expand-md {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     -ms-flex-pack: start;
@@ -4364,6 +4365,9 @@ input[type="button"].btn-block {
   }
   .navbar-expand-lg .navbar-toggler {
     display: none;
+  }
+  .navbar-brand{
+    margin: 0 auto;
   }
 }
 
