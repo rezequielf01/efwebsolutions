@@ -134,6 +134,24 @@
   .custom_heading-container hr {
     display: none;
   }
+
+  .info_social{
+    gap: 15px;
+  }
+
+  .service-card{
+    flex-direction: column;
+  }
+  .service-card-flip{
+    flex-direction: column-reverse;
+  }
+  .navbar-brand strong{
+    font-size: 1rem;
+  }
+  .blog-section{
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 480px) {
