@@ -305,6 +305,7 @@ a:focus {
 
 .about_section {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .about_section .row {
@@ -352,6 +353,7 @@ a:focus {
 .service_section {
   position: relative;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .service_section h2,
@@ -480,6 +482,7 @@ a:focus {
 
 .portfolio_section {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .portfolio_section .col-md-4 {
@@ -559,7 +562,7 @@ a:focus {
 }
 
 .news_section{
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .news_section h2,
@@ -801,6 +804,8 @@ a:focus {
   right: 35px;
 }
 
+
+
 .contact_section .contact_form-container input,
 .contact_section .contact_form-container select {
   border: none;
@@ -809,6 +814,7 @@ a:focus {
   width: 90%;
   margin: 15px 0;
   background-color: transparent;
+  overflow-x: hidden;
 }
 
 .contact_section .contact_form-container input::-webkit-input-placeholder {
